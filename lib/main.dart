@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
+      initialRoute: '/clubhouse',
       routes: {
         '/': (BuildContext context) => PageListView(),
         '/clubhouse': (BuildContext context) => ClubHouseHome(),
