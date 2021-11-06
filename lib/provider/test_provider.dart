@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class TestProvider extends ChangeNotifier{
+class TestProvider extends ChangeNotifier {
   int count = 0;
 
-  increase(){
+  increase() {
     count = count + 1;
     notifyListeners();
   }

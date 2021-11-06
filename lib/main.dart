@@ -3,20 +3,18 @@ import 'package:practice/screens/clubhouse/pages/club_house_home.dart';
 import 'package:practice/screens/facebook/pages/facebook_home.dart';
 
 void main() {
-    runApp(MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/clubhouse',
+      initialRoute: '/facebook',
       routes: {
         '/': (BuildContext context) => PageListView(),
         '/clubhouse': (BuildContext context) => ClubHouseHome(),
@@ -30,7 +28,7 @@ class PageListView extends StatelessWidget {
   final List<String> items = ['ClubHouse UI', 'Facebook UI'];
   final List<String> pages = ['clubhouse', 'facebook'];
 
-  PageListView({ Key? key }) : super(key: key);
+  PageListView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,11 +41,15 @@ class PageListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListTile(
             tileColor: Colors.black,
-            onTap: (){
+            onTap: () {
               Navigator.pushNamed(context, '/${pages[index]}');
             },
-            title: Text(items[index], style: TextStyle(color: Colors.white,),),
-            
+            title: Text(
+              items[index],
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
           );
         },
       ),
