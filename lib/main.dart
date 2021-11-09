@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practice/screens/clubhouse/pages/club_house_home.dart';
 import 'package:practice/screens/facebook/pages/facebook_home.dart';
+import 'package:practice/screens/netflix/pages/netflix.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,19 +15,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/facebook',
+      initialRoute: '/',
       routes: {
         '/': (BuildContext context) => PageListView(),
         '/clubhouse': (BuildContext context) => ClubHouseHome(),
         '/facebook': (BuildContext context) => FacebookHome(),
+        '/netflix': (BuildContext context) => Netflix()
       },
     );
   }
 }
 
 class PageListView extends StatelessWidget {
-  final List<String> items = ['ClubHouse UI', 'Facebook UI'];
-  final List<String> pages = ['clubhouse', 'facebook'];
+  final List<String> items = ['ClubHouse UI', 'Facebook UI', 'Netflix UI'];
+  final List<String> pages = ['clubhouse', 'facebook', 'netflix'];
 
   PageListView({Key? key}) : super(key: key);
 
