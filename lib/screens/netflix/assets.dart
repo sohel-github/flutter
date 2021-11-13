@@ -1,8 +1,7 @@
-class AssetsImages {
-  static const String _images = 'assets/images';
+class Assets {
+  static const String _images = 'assets/images/';
 
-  // ignore: unnecessary_brace_in_string_interps
-  static const String netflixLogo0 = '${_images}/netflix_logo0.png';
+  static const String netflixLogo0 = '${_images}netflix_logo0.png';
   static const String netflixLogo1 = '${_images}netflix_logo1.png';
 
   static const String sintel = '${_images}sintel.jpg';

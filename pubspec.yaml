@@ -31,7 +31,7 @@ dependencies:
   cached_network_image: ^3.1.0
   material_design_icons_flutter: ^5.0.6295
   video_player: ^0.10.11+2
-  flutter_bloc: ^6.0.1
+  flutter_bloc: ^7.0.0
 
 dev_dependencies:
   flutter_test:

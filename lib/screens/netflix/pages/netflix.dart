@@ -12,7 +12,7 @@ class Netflix extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: HomePage(),
+      home: NavScreen(),
     );
   }
 }
