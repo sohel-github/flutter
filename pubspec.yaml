@@ -32,10 +32,17 @@ dependencies:
   material_design_icons_flutter: ^5.0.6295
   video_player: ^0.10.11+2
   flutter_bloc: ^7.0.0
+  avatar_glow: ^2.0.2
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.9.2
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/appicon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

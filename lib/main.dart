@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:practice/screens/clubhouse/pages/club_house_home.dart';
 import 'package:practice/screens/facebook/pages/facebook_home.dart';
 import 'package:practice/screens/netflix/pages/netflix.dart';
+import 'package:practice/screens/tictactoe/pages/index.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,15 +21,21 @@ class MyApp extends StatelessWidget {
         '/': (BuildContext context) => PageListView(),
         '/clubhouse': (BuildContext context) => ClubHouseHome(),
         '/facebook': (BuildContext context) => FacebookHome(),
-        '/netflix': (BuildContext context) => Netflix()
+        '/netflix': (BuildContext context) => Netflix(),
+        '/tictactoe': (BuildContext context) => Index(),
       },
     );
   }
 }
 
 class PageListView extends StatelessWidget {
-  final List<String> items = ['ClubHouse UI', 'Facebook UI', 'Netflix UI'];
-  final List<String> pages = ['clubhouse', 'facebook', 'netflix'];
+  final List<String> items = [
+    'ClubHouse UI',
+    'Facebook UI',
+    'Netflix UI',
+    'Tic Tac Toe'
+  ];
+  final List<String> pages = ['clubhouse', 'facebook', 'netflix', 'tictactoe'];
 
   PageListView({Key? key}) : super(key: key);
 
